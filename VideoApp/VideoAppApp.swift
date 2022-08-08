@@ -1,10 +1,3 @@
-//
-//  VideoAppApp.swift
-//  VideoApp
-//
-//  Created by Amjad Oudeh on 08.08.22.
-//
-
 import SwiftUI
 
 @main
