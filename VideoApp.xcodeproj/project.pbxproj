@@ -11,6 +11,7 @@
 		D0DF18A528A13D0F004C49FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18A428A13D0F004C49FA /* ContentView.swift */; };
 		D0DF18A728A13D11004C49FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DF18A628A13D11004C49FA /* Assets.xcassets */; };
 		D0DF18AA28A13D11004C49FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DF18A928A13D11004C49FA /* Preview Assets.xcassets */; };
+		D0DF18B228A142FC004C49FA /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18B128A142FC004C49FA /* QueryTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D0DF18A428A13D0F004C49FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0DF18A628A13D11004C49FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0DF18A928A13D11004C49FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0DF18B128A142FC004C49FA /* QueryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D0DF18A228A13D0F004C49FA /* VideoAppApp.swift */,
 				D0DF18A428A13D0F004C49FA /* ContentView.swift */,
+				D0DF18B028A142D9004C49FA /* Components  */,
 				D0DF18A628A13D11004C49FA /* Assets.xcassets */,
 				D0DF18A828A13D11004C49FA /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				D0DF18A928A13D11004C49FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0DF18B028A142D9004C49FA /* Components  */ = {
+			isa = PBXGroup;
+			children = (
+				D0DF18B128A142FC004C49FA /* QueryTag.swift */,
+			);
+			path = "Components ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DF18A528A13D0F004C49FA /* ContentView.swift in Sources */,
+				D0DF18B228A142FC004C49FA /* QueryTag.swift in Sources */,
 				D0DF18A328A13D0F004C49FA /* VideoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
