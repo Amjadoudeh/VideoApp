@@ -4,7 +4,7 @@ import SwiftUI
 struct VideoAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(explore: Explore.explore)
         }
     }
 }
