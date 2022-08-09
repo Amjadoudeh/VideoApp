@@ -5,6 +5,7 @@ struct VideoCardView: View {
     var body: some View {
         ZStack {
             ZStack(alignment: .bottomLeading) {
+                VStack {
                 //MARK: Video image
                 AsyncImage(url: URL(string: video.image)) { image in
                     image.resizable()
@@ -18,33 +19,40 @@ struct VideoCardView: View {
                         .frame(height: 250)
                         .cornerRadius(5)
                 }
-                
+                // was  here
                 //MARK: Video info
                 VStack() {
                     HStack(alignment: .center,spacing: 5) {
                         Image(systemName: "person")
+                            .foregroundColor(.white.opacity(0.8))
                             .font(.system(size: 35))
                         Spacer()
                         VStack(alignment: .leading, spacing: 5) {
-                            Text("By: \(video.user.name)")
-                                .foregroundColor(.white)
-                            
-                            Text("\(video.duration) sec")
-                                .foregroundColor(.red)
+                            HStack {
+                                Text("By: \(video.user.name)")
+                                    .foregroundColor(.white)
+                                Spacer()
+                                Text("\(video.duration) sec")
+                                    .foregroundColor(.red)
+                            }
+                           
                         }
                         Spacer()
                         Spacer()
                     }
                 }
                 .padding()
+//                .background(.gray.opacity(0.1))
             }
+        }
             Image(systemName: "play")
                 .foregroundColor(.white)
                 .font(.title)
                 .padding()
-                .background(.ultraThinMaterial)
+                .background(.ultraThinMaterial).opacity(0.3)
                 .cornerRadius(30)
         }
+        
     }
 }
 

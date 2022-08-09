@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var videoManager = VideoManager()
-    var colums = [GridItem(.adaptive(minimum: 250), spacing: 20)]
+    var colums = [GridItem(.adaptive(minimum: 250), spacing: 0)]
     var explore: Explore
     
     var body: some View {
@@ -10,7 +10,7 @@ struct ContentView: View {
             VStack {
                 LogoControleNavView()
                 Divider().background(.white.opacity(0.8))
-               HStack {
+                HStack {
                     ScrollView(.horizontal, showsIndicators: false) {
                         //MARK: Explore button
                         HStack {
@@ -78,46 +78,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(explore: Explore.Explore)
     }
 }
-
-//struct QueryTagNav: View {
-//    @StateObject var videoManager = VideoManager()
-//    var explore: Explore
-//    var body: some View {
-//        ScrollView(.horizontal, showsIndicators: false) {
-//            //MARK: Explore button
-//            HStack {
-//                HStack {
-//                    Image(systemName: "safari").font(.system(size: 20))
-//                    Text(explore.rawValue)
-//
-//                }
-//                .font(.subheadline.bold())
-//                .foregroundColor(.white)
-//                .padding(.horizontal, 8)
-//                .padding(.vertical, 6)
-//                .background(Color("AccentColor"))
-//                .cornerRadius(3)
-//
-//                // to be fixed
-//                Divider()
-//                    .background(.white.opacity(0.8))
-//                    .frame(height: 30)
-//                //MARK: Query tags
-//                HStack {
-//                    ForEach(Query.allCases, id: \.self) {
-//                        searchQuery in
-//                        QueryTag(query: searchQuery, isSelected: videoManager.selectedQuery = searchQuery )
-//                            .onTapGesture {
-//                                videoManager.selectedQuery = searchQuery
-//                            }
-//                    }
-//                }
-//
-//            }
-//        }
-//        .padding(.horizontal, 10)
-//    }
-//}
 
 struct LogoControleNavView: View {
     var body: some View {

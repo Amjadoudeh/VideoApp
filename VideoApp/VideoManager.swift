@@ -29,7 +29,7 @@ class VideoManager: ObservableObject {
     
     func findVideos(topic: Query) async {
         do {
-            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&per_page=15") else { fatalError("Missing URL")}
+            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&per_page=15&orientation=portrait") else { fatalError("Missing URL")}
             
             var urlRequest = URLRequest(url: url)
             urlRequest.setValue("563492ad6f91700001000001171cc72abc8c4b37b2c09d0ebd0de313", forHTTPHeaderField: "Authorization")
@@ -42,9 +42,12 @@ class VideoManager: ObservableObject {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let decodedData = try decoder.decode(ResponseBody.self, from: data)
             // clear it before the next response
-            self.videos = []
-            self.videos = decodedData.videos
- 
+            
+            DispatchQueue.main.async {
+                self.videos = []
+                self.videos = decodedData.videos
+            }
+           
         } catch {
             print("Error fetching data from the server: \(error)")
         }
