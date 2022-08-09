@@ -4,9 +4,9 @@ struct ContentView: View {
     var explore: Explore
     var body: some View {
         VStack {
-            LogoControleView()
+            LogoControleNavView()
             Divider().background(.white.opacity(0.8))
-            QueryTagNav(explore: Explore.explore)
+            QueryTagNav(explore: Explore.Explore)
             Divider().background(.white.opacity(0.8))
             Spacer()
         }
@@ -17,7 +17,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(explore: Explore.explore)
+        ContentView(explore: Explore.Explore)
     }
 }
 
@@ -56,14 +56,15 @@ struct QueryTagNav: View {
     }
 }
 
-struct LogoControleView: View {
+struct LogoControleNavView: View {
     var body: some View {
         HStack{
             HStack {
                 Image(systemName: "play.rectangle")
+                    .background(.red)
                     .font(.system(size: 22))
                     .foregroundColor(.white)
-                    .background(.red)
+                    
                 // need to fix the background
                 
                 

@@ -1,8 +1,8 @@
 import Foundation
 
 enum Query: String, CaseIterable {
-    case  cars , animals , people, ocean , food, flamenco, meditaion ,study , nature
+    case  Cars , Animals , People, Ocean , Food, Flamenco, Meditaion ,Study , Nature
 }
 enum Explore: String {
-    case explore
+    case Explore
 }

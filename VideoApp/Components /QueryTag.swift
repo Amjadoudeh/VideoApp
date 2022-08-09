@@ -19,7 +19,7 @@ struct QueryTag: View {
 
 struct QueryTag_Previews: PreviewProvider {
     static var previews: some View {
-        QueryTag(query: Query.cars, isSelected: true)
+        QueryTag(query: Query.Cars, isSelected: true)
             .preferredColorScheme(.dark)
     }
 }
