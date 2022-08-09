@@ -1,21 +1,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var videoManager = VideoManager()
+    
     var explore: Explore
     var body: some View {
-        VStack {
-            LogoControleNavView()
-            Divider().background(.white.opacity(0.8))
-            QueryTagNav(explore: Explore.Explore)
-            Divider().background(.white.opacity(0.8))
-            
-            ScrollView {
-                VideoCardView(video: previewVideo)
+        NavigationView {
+            VStack {
+                LogoControleNavView()
+                Divider().background(.white.opacity(0.8))
+                QueryTagNav(explore: Explore.Explore)
+                Divider().background(.white.opacity(0.8))
+                
+                ScrollView {
+                    ForEach(videoManager.videos, id: \.id) { video in
+                        NavigationLink {
+                            VideoPlayerView(video: video)
+                        } label: {
+                            VideoCardView(video: video)
+                                .padding(.vertical, 6)
+                        }
+                    }
+                }
+                Spacer()
             }
-            Spacer()
-        }
-        .padding(.top, 10)
+            .padding(.top, 10)
         .background(.black.opacity(0.9))
+        .navigationBarHidden(true)
+        }
+       
     }
 }
 
