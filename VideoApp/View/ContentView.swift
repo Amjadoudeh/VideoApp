@@ -69,7 +69,10 @@ struct ContentView: View {
             .padding(.top, 10)
             .background(.black.opacity(0.9))
             .navigationBarHidden(true)
+            TabView()
         }
+        
+        
     }
 }
 

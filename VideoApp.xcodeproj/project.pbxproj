@@ -17,6 +17,7 @@
 		D0DF18B928A26473004C49FA /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0DF18B828A26473004C49FA /* videoData.json */; };
 		D0DF18BC28A26503004C49FA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18BB28A26503004C49FA /* ModelData.swift */; };
 		D0DF18BE28A26B04004C49FA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18BD28A26B04004C49FA /* VideoPlayerView.swift */; };
+		D0DF18C028A2AB17004C49FA /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18BF28A2AB17004C49FA /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D0DF18B828A26473004C49FA /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
 		D0DF18BB28A26503004C49FA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		D0DF18BD28A26B04004C49FA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		D0DF18BF28A2AB17004C49FA /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				D0DF18A828A13D11004C49FA /* Preview Content */,
 				D0DF18B328A14A49004C49FA /* VideoManager.swift */,
 				D0DF18B828A26473004C49FA /* videoData.json */,
+				D0DF18A628A13D11004C49FA /* Assets.xcassets */,
 			);
 			path = VideoApp;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				D0DF18A428A13D0F004C49FA /* ContentView.swift */,
 				D0DF18B628A23FA6004C49FA /* VideoCardView.swift */,
 				D0DF18BD28A26B04004C49FA /* VideoPlayerView.swift */,
+				D0DF18BF28A2AB17004C49FA /* TabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				D0DF18BB28A26503004C49FA /* ModelData.swift */,
-				D0DF18A628A13D11004C49FA /* Assets.xcassets */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				D0DF18BC28A26503004C49FA /* ModelData.swift in Sources */,
 				D0DF18BE28A26B04004C49FA /* VideoPlayerView.swift in Sources */,
+				D0DF18C028A2AB17004C49FA /* TabView.swift in Sources */,
 				D0DF18A528A13D0F004C49FA /* ContentView.swift in Sources */,
 				D0DF18B228A142FC004C49FA /* QueryTag.swift in Sources */,
 				D0DF18A328A13D0F004C49FA /* VideoAppApp.swift in Sources */,
