@@ -5,7 +5,7 @@ struct QueryTag: View {
     var isSelected: Bool
     
     var body: some View {
-        
+        //MARK: Query tag
         Text(query.rawValue)
             .font(.subheadline)
             .fontWeight(isSelected ? .bold : .semibold)

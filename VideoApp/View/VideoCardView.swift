@@ -2,8 +2,45 @@ import SwiftUI
 
 struct VideoCardView: View {
     var body: some View {
-        ZStack(alignment: .bottomLeading) {
-            AsyncImage(url: URL(string: ""))
+        ZStack {
+            ZStack(alignment: .bottomLeading) {
+                //MARK: Video image
+                AsyncImage(url: URL(string: "")) { image in
+                    image.resizable()
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 250)
+                        .cornerRadius(5)
+                } placeholder: {
+                    Rectangle()
+                        .foregroundColor(.gray.opacity(0.3))
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 250)
+                        .cornerRadius(5)
+                }
+                
+                //MARK: Video info
+                VStack() {
+                    HStack(alignment: .center,spacing: 5) {
+                        Image(systemName: "person")
+                            .font(.system(size: 35))
+                        Spacer()
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("By AMJAD")
+                            
+                            Text("30 sec")
+                        }
+                        Spacer()
+                        Spacer()
+                    }
+                }
+                .padding()
+            }
+            Image(systemName: "play")
+                .foregroundColor(.white)
+                .font(.title)
+                .padding()
+                .background(.ultraThinMaterial)
+                .cornerRadius(30)
         }
     }
 }

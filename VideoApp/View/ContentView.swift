@@ -25,10 +25,10 @@ struct QueryTagNav: View {
     var explore: Explore
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
+            //MARK: Explore button
             HStack {
                 HStack {
                     Image(systemName: "safari").font(.system(size: 20))
-                    
                     Text(explore.rawValue)
                     
                 }
@@ -42,7 +42,7 @@ struct QueryTagNav: View {
                 // to be fixed
                 Divider().background(.white.opacity(0.8))
                     .frame(height: 30)
-                
+                //MARK: Query tags
                 HStack {
                     ForEach(Query.allCases, id: \.self) {
                         searchQuery in
@@ -97,11 +97,5 @@ struct LogoControleNavView: View {
             .padding(.horizontal,4)
         }
         .padding(.horizontal, 8)
-    }
-}
-
-struct ExtractedView: View {
-    var body: some View {
-        ExtractedView()
     }
 }
