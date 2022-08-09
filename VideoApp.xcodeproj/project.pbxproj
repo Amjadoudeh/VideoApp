@@ -16,6 +16,7 @@
 		D0DF18B728A23FA6004C49FA /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18B628A23FA6004C49FA /* VideoCardView.swift */; };
 		D0DF18B928A26473004C49FA /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = D0DF18B828A26473004C49FA /* videoData.json */; };
 		D0DF18BC28A26503004C49FA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18BB28A26503004C49FA /* ModelData.swift */; };
+		D0DF18BE28A26B04004C49FA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DF18BD28A26B04004C49FA /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D0DF18B628A23FA6004C49FA /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
 		D0DF18B828A26473004C49FA /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
 		D0DF18BB28A26503004C49FA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		D0DF18BD28A26B04004C49FA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				D0DF18A428A13D0F004C49FA /* ContentView.swift */,
 				D0DF18B628A23FA6004C49FA /* VideoCardView.swift */,
+				D0DF18BD28A26B04004C49FA /* VideoPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DF18BC28A26503004C49FA /* ModelData.swift in Sources */,
+				D0DF18BE28A26B04004C49FA /* VideoPlayerView.swift in Sources */,
 				D0DF18A528A13D0F004C49FA /* ContentView.swift in Sources */,
 				D0DF18B228A142FC004C49FA /* QueryTag.swift in Sources */,
 				D0DF18A328A13D0F004C49FA /* VideoAppApp.swift in Sources */,
