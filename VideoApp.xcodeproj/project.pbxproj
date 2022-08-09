@@ -61,11 +61,10 @@
 		D0DF18A128A13D0F004C49FA /* VideoApp */ = {
 			isa = PBXGroup;
 			children = (
-				D0DF18BA28A264F1004C49FA /* Model */,
 				D0DF18A228A13D0F004C49FA /* VideoAppApp.swift */,
 				D0DF18B528A14CBA004C49FA /* View */,
 				D0DF18B028A142D9004C49FA /* Components  */,
-				D0DF18A628A13D11004C49FA /* Assets.xcassets */,
+				D0DF18BA28A264F1004C49FA /* Model */,
 				D0DF18A828A13D11004C49FA /* Preview Content */,
 				D0DF18B328A14A49004C49FA /* VideoManager.swift */,
 				D0DF18B828A26473004C49FA /* videoData.json */,
@@ -102,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D0DF18BB28A26503004C49FA /* ModelData.swift */,
+				D0DF18A628A13D11004C49FA /* Assets.xcassets */,
 			);
 			path = Model;
 			sourceTree = "<group>";

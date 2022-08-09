@@ -8,6 +8,10 @@ struct ContentView: View {
             Divider().background(.white.opacity(0.8))
             QueryTagNav(explore: Explore.Explore)
             Divider().background(.white.opacity(0.8))
+            
+            ScrollView {
+                VideoCardView(video: previewVideo)
+            }
             Spacer()
         }
         .padding(.top, 10)

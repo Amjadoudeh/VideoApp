@@ -1,11 +1,12 @@
 import SwiftUI
 
 struct VideoCardView: View {
+    var video: Video
     var body: some View {
         ZStack {
             ZStack(alignment: .bottomLeading) {
                 //MARK: Video image
-                AsyncImage(url: URL(string: "")) { image in
+                AsyncImage(url: URL(string: video.image)) { image in
                     image.resizable()
                         .frame(maxWidth: .infinity)
                         .frame(height: 250)
@@ -25,9 +26,11 @@ struct VideoCardView: View {
                             .font(.system(size: 35))
                         Spacer()
                         VStack(alignment: .leading, spacing: 5) {
-                            Text("By AMJAD")
+                            Text("By: \(video.user.name)")
+                                .foregroundColor(.white)
                             
-                            Text("30 sec")
+                            Text("\(video.duration) sec")
+                                .foregroundColor(.red)
                         }
                         Spacer()
                         Spacer()
@@ -47,6 +50,6 @@ struct VideoCardView: View {
 
 struct VideoCardView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoCardView()
+        VideoCardView(video: previewVideo)
     }
 }
