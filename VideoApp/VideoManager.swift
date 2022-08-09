@@ -13,7 +13,7 @@ enum Explore: String {
 //MARK: Class for the HTTP request
 class VideoManager: ObservableObject {
     @Published private(set) var videos: [Video] = []
-    @Published private var selectedQuery: Query = Query.Cars {
+    @Published  var selectedQuery: Query = Query.Cars {
         didSet {
             Task.init {
                 await findVideos(topic: selectedQuery)
