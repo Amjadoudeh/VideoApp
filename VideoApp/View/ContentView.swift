@@ -34,13 +34,14 @@ struct QueryTagNav: View {
                 }
                 .font(.subheadline.bold())
                 .foregroundColor(.white)
-                .padding(.horizontal, 6)
+                .padding(.horizontal, 8)
                 .padding(.vertical, 6)
                 .background(Color("AccentColor"))
-                .cornerRadius(5)
+                .cornerRadius(3)
                 
                 // to be fixed
-                Divider().background(.white.opacity(0.8))
+                Divider()
+                    .background(.white.opacity(0.8))
                     .frame(height: 30)
                 //MARK: Query tags
                 HStack {
@@ -52,7 +53,7 @@ struct QueryTagNav: View {
                 
             }
         }
-        .padding(.horizontal, 8)
+        .padding(.horizontal, 10)
     }
 }
 
@@ -60,10 +61,9 @@ struct LogoControleNavView: View {
     var body: some View {
         HStack{
             HStack {
-                Image(systemName: "play.rectangle")
-                    .background(.red)
-                    .font(.system(size: 22))
-                    .foregroundColor(.white)
+                Image("youtube")
+                    .resizable()
+                    .frame(width: 34, height: 30)
                     
                 // need to fix the background
                 
