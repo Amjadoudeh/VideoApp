@@ -65,9 +65,7 @@ struct LogoControleNavView: View {
                     .resizable()
                     .frame(width: 34, height: 30)
                     
-                // need to fix the background
-                
-                
+                // need to fix the Title
                 Text("MYVIDEO")
                     .font(.title3.weight(.heavy))
                     .foregroundColor(.white)
