@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var videoManager = VideoManager()
+    var colums = [GridItem(.adaptive(minimum: 250), spacing: 20)]
     
     var explore: Explore
     var body: some View {
@@ -13,12 +14,14 @@ struct ContentView: View {
                 Divider().background(.white.opacity(0.8))
                 
                 ScrollView {
-                    ForEach(videoManager.videos, id: \.id) { video in
-                        NavigationLink {
-                            VideoPlayerView(video: video)
-                        } label: {
-                            VideoCardView(video: video)
-                                .padding(.vertical, 6)
+                     LazyVGrid(columns: colums){
+                        ForEach(videoManager.videos, id: \.id) { video in
+                            NavigationLink {
+                                VideoPlayerView(video: video)
+                            } label: {
+                                VideoCardView(video: video)
+                                    .padding(.vertical, 6)
+                            }
                         }
                     }
                 }
