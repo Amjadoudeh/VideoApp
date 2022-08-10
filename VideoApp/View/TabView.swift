@@ -18,7 +18,7 @@ struct TabView: View {
                         .resizable()
                         .foregroundColor(.white)
                         .frame(width: 25, height: 25)
-                   
+                    
                     
                     Spacer()
                     Text("Home")
@@ -36,7 +36,7 @@ struct TabView: View {
                     Image(systemName: "house.fill")
                         .foregroundColor(.white)
                         .font(.system(size: 22))
-                   
+                    
                     Spacer()
                     Text("Home")
                         .font(.caption2)
@@ -53,7 +53,7 @@ struct TabView: View {
                     Image(systemName: "plus.circle")
                         .foregroundColor(.white)
                         .font(.system(size: 40))
-                
+                    
                 }
             }
             
@@ -63,11 +63,11 @@ struct TabView: View {
                 
             } label: {
                 VStack {
-                        Image(systemName: "house.fill")
+                    Image(systemName: "house.fill")
                         .foregroundColor(.white)
                         .font(.system(size: 22))
                     
-
+                    
                     Text("Home")
                         .font(.caption2)
                         .foregroundColor(.white)
