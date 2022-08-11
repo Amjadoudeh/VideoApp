@@ -47,7 +47,7 @@ class VideoManager: ObservableObject {
                 self.videos = []
                 self.videos = decodedData.videos
             }
-           
+            
         } catch {
             print("Error fetching data from the server: \(error)")
         }

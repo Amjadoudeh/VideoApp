@@ -36,9 +36,9 @@ struct ContentView: View {
                                     searchQuery in
                                     QueryTag(query: searchQuery, isSelected:
                                                 videoManager.selectedQuery == searchQuery)
-                                        .onTapGesture {
-                                            videoManager.selectedQuery = searchQuery
-                                        }
+                                    .onTapGesture {
+                                        videoManager.selectedQuery = searchQuery
+                                    }
                                 }
                             }
                             
